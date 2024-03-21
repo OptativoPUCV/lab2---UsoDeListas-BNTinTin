@@ -535,3 +535,27 @@ exercises.c:80:9: error: unused variable ‘PAUX’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 6bdb7d8
+Thu 21 Mar 2024 07:33:00 PM UTC: 
+ exercises.c | 16 +++++++++++-----
+ 1 file changed, 11 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:60:14: error: invalid use of undefined type ‘struct List’
+   60 |     suma += L[i];
+      |              ^
+exercises.c:60:13: error: invalid use of incomplete typedef ‘List’
+   60 |     suma += L[i];
+      |             ^
+exercises.c: In function ‘copia_pila’:
+exercises.c:87:9: error: storage size of ‘PAUX’ isn’t known
+   87 |   Stack PAUX;
+      |         ^~~~
+exercises.c:88:3: error: implicit declaration of function ‘inicializar_pila’ [-Werror=implicit-function-declaration]
+   88 |   inicializar_pila(&PAUX);
+      |   ^~~~~~~~~~~~~~~~
+exercises.c:87:9: error: unused variable ‘PAUX’ [-Werror=unused-variable]
+   87 |   Stack PAUX;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f6fbe34

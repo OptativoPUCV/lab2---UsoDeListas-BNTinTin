@@ -51,8 +51,15 @@ Ejercicio 2.
 Crea una función que reciba una lista de enteros (int*) y 
 retorne la suma de sus elementos.
 */
-int sumaLista(List *L) {
-   return 0;
+int sumaLista(List *L) 
+{
+  int size = get_size(L);
+  int suma = 0;
+  for (int i = 0; i < size; i++)
+  {
+    suma += L[i];
+  }
+  return suma;
 }
 
 /*
@@ -87,9 +94,8 @@ void copia_pila(Stack* P1, Stack* P2)
   }
   while (top(&PAUX) != NULL)
   {
-    pushBack(P2, top(P1));
-    pushBack(&PAUX, top(P1));
-    pop(P1);
+    pushBack(P1, top(&PAUX));
+    pop(&PAUX);
   }
 }
 
