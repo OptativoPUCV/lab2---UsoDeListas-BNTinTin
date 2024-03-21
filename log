@@ -861,3 +861,20 @@ exercises.c:96:11: error: unused variable ‘tempStack’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 3e4bf72
+Thu 21 Mar 2024 08:28:34 PM UTC: 
+ exercises.c | 30 ++++++++----------------------
+ 1 file changed, 8 insertions(+), 22 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:106:27: error: expected ‘)’ before ‘;’ token
+  106 |     pushBack(P1, top(PAUX);
+      |             ~             ^
+      |                           )
+exercises.c:107:15: error: expected ‘;’ before ‘}’ token
+  107 |     pop(PAUX);
+      |               ^
+      |               ;
+  108 |   }
+      |   ~            
+Compilation failed
+c4143ca

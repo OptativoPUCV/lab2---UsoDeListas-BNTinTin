@@ -92,35 +92,21 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack* P1, Stack* P2) {
-    Stack tempStack; // Pila auxiliar para almacenar temporalmente los elementos de P1
-    initStack(&tempStack);
-
-    // Copiar elementos de P1 a P2 y a la pila auxiliar
-    Node* current = P1->top;
-    while (current != NULL) {
-        int data = current->data;
-        push(P2, data);
-        push(&tempStack, data);
-        current = current->next;
-    }
-
-    // Restaurar P1 desde la pila auxiliar
-    while (!isEmpty(&tempStack)) {
-        int data = pop(&tempStack);
-        push(P1, data);
-    }
-}
-/*void copia_pila(Stack* P1, Stack* P2) 
+void copia_pila(Stack* P1, Stack* P2) 
 {
+  Stack* PAUX = create_stack();
   while (top(P1) != NULL)
   {
     pushBack(P2, top(P1));
+    pushBack(PAUX, top(P1));
     pop(P1);
   }
-
+  while (top(PAUX) != NULL)
+  {
+    pushBack(P1, top(PAUX);
+    pop(PAUX);
+  }
 }
-*/
 
 /*
 Ejercicio 5.
