@@ -407,3 +407,21 @@ test.c:272: error: expected ‘{’ at end of input
 cc1: all warnings being treated as errors
 Compilation failed
 4c5cb15
+Thu 21 Mar 2024 07:21:12 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:80:3: error: implicit declaration of function ‘inicializar_pila’ [-Werror=implicit-function-declaration]
+   80 |   inicializar_pila(PAUX*);
+      |   ^~~~~~~~~~~~~~~~
+exercises.c:80:20: error: ‘PAUX’ undeclared (first use in this function)
+   80 |   inicializar_pila(PAUX*);
+      |                    ^~~~
+exercises.c:80:20: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:80:25: error: expected expression before ‘)’ token
+   80 |   inicializar_pila(PAUX*);
+      |                         ^
+cc1: all warnings being treated as errors
+Compilation failed
+9095fdb
