@@ -795,3 +795,69 @@ Thu 21 Mar 2024 08:08:12 PM UTC:
  tests:  2|3
 total_score: 30/70
 3bb8df2
+Thu 21 Mar 2024 08:16:36 PM UTC: 
+ exercises.c | 22 +++++++++++++++++++++-
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:96:11: error: storage size of ‘tempStack’ isn’t known
+   96 |     Stack tempStack; // Pila auxiliar para almacenar temporalmente los elementos de P1
+      |           ^~~~~~~~~
+exercises.c:97:5: error: implicit declaration of function ‘initStack’; did you mean ‘initstate’? [-Werror=implicit-function-declaration]
+   97 |     initStack(&tempStack);
+      |     ^~~~~~~~~
+      |     initstate
+exercises.c:100:5: error: unknown type name ‘Node’
+  100 |     Node* current = P1->top;
+      |     ^~~~
+exercises.c:100:23: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  100 |     Node* current = P1->top;
+      |                       ^~
+exercises.c:102:27: error: request for member ‘data’ in something not a structure or union
+  102 |         int data = current->data;
+      |                           ^~
+exercises.c:103:18: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  103 |         push(P2, data);
+      |                  ^~~~
+      |                  |
+      |                  int
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:104:26: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  104 |         push(&tempStack, data);
+      |                          ^~~~
+      |                          |
+      |                          int
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:105:26: error: request for member ‘next’ in something not a structure or union
+  105 |         current = current->next;
+      |                          ^~
+exercises.c:109:13: error: implicit declaration of function ‘isEmpty’ [-Werror=implicit-function-declaration]
+  109 |     while (!isEmpty(&tempStack)) {
+      |             ^~~~~~~
+exercises.c:111:18: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  111 |         push(P1, data);
+      |                  ^~~~
+      |                  |
+      |                  int
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘int’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:96:11: error: unused variable ‘tempStack’ [-Werror=unused-variable]
+   96 |     Stack tempStack; // Pila auxiliar para almacenar temporalmente los elementos de P1
+      |           ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3e4bf72
