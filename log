@@ -613,3 +613,14 @@ Thu 21 Mar 2024 07:42:46 PM UTC:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 9bc9b9f
+Thu 21 Mar 2024 07:43:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:60:10: error: assignment to ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   60 |     suma += (int*)next(L);
+      |          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+2c9530e
