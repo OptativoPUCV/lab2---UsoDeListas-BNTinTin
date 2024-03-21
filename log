@@ -789,3 +789,9 @@ exercises.c:77:7: error: unused variable ‘suma’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 26bbfb5
+Thu 21 Mar 2024 08:08:12 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  2|3
+total_score: 30/70
+3bb8df2
