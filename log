@@ -280,3 +280,20 @@ Thu 21 Mar 2024 07:12:12 PM UTC:
  tests:  0|5
 total_score: 0/70
 cd44da0
+Thu 21 Mar 2024 07:15:41 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:82:25: error: expected ‘)’ before ‘;’ token
+   82 |     pushBack(P2, top(P1);
+      |             ~           ^
+      |                         )
+exercises.c:83:13: error: expected ‘;’ before ‘}’ token
+   83 |     pop(P1);
+      |             ^
+      |             ;
+   84 |   }
+      |   ~          
+Compilation failed
+7fa6629
