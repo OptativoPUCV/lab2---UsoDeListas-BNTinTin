@@ -440,3 +440,18 @@ exercises.c:80:20: note: each undeclared identifier is reported only once for ea
 cc1: all warnings being treated as errors
 Compilation failed
 ee80f31
+Thu 21 Mar 2024 07:21:55 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:80:3: error: parameter names (without types) in function declaration [-Werror]
+   80 |   void inicializar_pila(PAUX);
+      |   ^~~~
+exercises.c:84:14: error: ‘PAUX’ undeclared (first use in this function)
+   84 |     pushBack(PAUX, top(P1));
+      |              ^~~~
+exercises.c:84:14: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+0b4026d
