@@ -638,3 +638,14 @@ exercises.c:60:13: error: invalid type argument of unary ‘*’ (have ‘int’
 cc1: all warnings being treated as errors
 Compilation failed
 eb39ff7
+Thu 21 Mar 2024 07:44:18 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:60:10: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   60 |     suma += next(L);
+      |          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+9d4ba88
