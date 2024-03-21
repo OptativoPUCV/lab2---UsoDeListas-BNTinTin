@@ -718,3 +718,14 @@ exercises.c:58:14: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 d48127a
+Thu 21 Mar 2024 07:56:32 PM UTC: 
+ exercises.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:58:17: error: comparison between pointer and integer [-Werror]
+   58 |   while((*dato) != NULL)
+      |                 ^~
+cc1: all warnings being treated as errors
+Compilation failed
+d6f457c
