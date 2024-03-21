@@ -263,3 +263,14 @@ exercises.c:80:22: error: expected ‘)’ before ‘!’ token
       |                      )
 Compilation failed
 2b6bfb6
+Thu 21 Mar 2024 07:11:52 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:80:23: error: comparison between pointer and integer [-Werror]
+   80 |   while (get_size(P1) != NULL)
+      |                       ^~
+cc1: all warnings being treated as errors
+Compilation failed
+455e451
