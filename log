@@ -735,3 +735,20 @@ Thu 21 Mar 2024 07:56:44 PM UTC:
  tests:  1|4
 total_score: 10/70
 e860577
+Thu 21 Mar 2024 08:01:49 PM UTC: 
+ exercises.c | 2 --
+ 1 file changed, 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:88:9: error: storage size of ‘PAUX’ isn’t known
+   88 |   Stack PAUX;
+      |         ^~~~
+exercises.c:89:3: error: implicit declaration of function ‘inicializar_pila’ [-Werror=implicit-function-declaration]
+   89 |   inicializar_pila(&PAUX);
+      |   ^~~~~~~~~~~~~~~~
+exercises.c:88:9: error: unused variable ‘PAUX’ [-Werror=unused-variable]
+   88 |   Stack PAUX;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4c3ec97
