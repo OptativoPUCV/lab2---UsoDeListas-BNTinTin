@@ -693,3 +693,14 @@ exercises.c:57:23: error: ‘size’ undeclared (first use in this function)
 exercises.c:57:23: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 a363b5f
+Thu 21 Mar 2024 07:52:54 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:58:15: error: comparison between pointer and integer [-Werror]
+   58 |   while(*dato != NULL)
+      |               ^~
+cc1: all warnings being treated as errors
+Compilation failed
+1d19ae5
