@@ -78,10 +78,13 @@ void eliminaElementos(List*L, int elem)
   int *dato = (int*)first(L);
   while((dato) != NULL)
   {
-    suma+= *dato;
+    if (elem == *dato)
+    {
+      popCurrent(L);
+    }
     dato = (int*)next(L);
   }
-  return suma;
+
 }
 
 /*

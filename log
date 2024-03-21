@@ -778,3 +778,14 @@ exercises.c:75:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 6a418a1
+Thu 21 Mar 2024 08:08:03 PM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:77:7: error: unused variable ‘suma’ [-Werror=unused-variable]
+   77 |   int suma = 0;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+26bbfb5
