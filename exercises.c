@@ -79,8 +79,7 @@ void copia_pila(Stack* P1, Stack* P2)
 {
   while (get_size(P1) > 0) {
     push(P2, top(P1));
-  })
-}
+  }
 
 /*
 Ejercicio 5.
