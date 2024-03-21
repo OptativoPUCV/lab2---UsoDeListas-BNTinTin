@@ -764,3 +764,17 @@ Thu 21 Mar 2024 08:05:40 PM UTC:
  tests:  1|4
 total_score: 10/70
 ec25651
+Thu 21 Mar 2024 08:06:26 PM UTC: 
+ exercises.c | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:84:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   84 |   return suma;
+      |          ^~~~
+exercises.c:75:6: note: declared here
+   75 | void eliminaElementos(List*L, int elem)
+      |      ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6a418a1
