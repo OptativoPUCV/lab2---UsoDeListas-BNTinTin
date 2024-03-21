@@ -704,3 +704,17 @@ exercises.c:58:15: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 1d19ae5
+Thu 21 Mar 2024 07:54:07 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:57:14: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   57 |   int dato = (int)first(L);
+      |              ^
+exercises.c:58:14: error: comparison between pointer and integer [-Werror]
+   58 |   while(dato != NULL)
+      |              ^~
+cc1: all warnings being treated as errors
+Compilation failed
+d48127a
