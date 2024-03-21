@@ -518,3 +518,20 @@ exercises.c:80:9: error: unused variable ‘PAUX’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 b4b818d
+Thu 21 Mar 2024 07:25:52 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:80:9: error: storage size of ‘PAUX’ isn’t known
+   80 |   Stack PAUX;
+      |         ^~~~
+exercises.c:81:3: error: implicit declaration of function ‘inicializar_pila’ [-Werror=implicit-function-declaration]
+   81 |   inicializar_pila(&PAUX);
+      |   ^~~~~~~~~~~~~~~~
+exercises.c:80:9: error: unused variable ‘PAUX’ [-Werror=unused-variable]
+   80 |   Stack PAUX;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6bdb7d8
