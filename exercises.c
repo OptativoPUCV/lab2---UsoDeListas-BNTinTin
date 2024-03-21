@@ -61,7 +61,7 @@ int sumaLista(List *L)
     suma += *dato;
     
   }
-  return suma;
+  return *dato;
 }
 
 /*

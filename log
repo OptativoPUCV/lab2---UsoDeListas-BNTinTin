@@ -667,3 +667,18 @@ Thu 21 Mar 2024 07:47:57 PM UTC:
  tests:  0|5
 total_score: 0/70
 eb8e373
+Thu 21 Mar 2024 07:48:43 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:64:11: error: ‘dato’ undeclared (first use in this function)
+   64 |   return *dato;
+      |           ^~~~
+exercises.c:64:11: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:65:1: error: control reaches end of non-void function [-Werror=return-type]
+   65 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d5d3ff0
