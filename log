@@ -624,3 +624,17 @@ exercises.c:60:10: error: assignment to ‘int’ from ‘int *’ makes integer
 cc1: all warnings being treated as errors
 Compilation failed
 2c9530e
+Thu 21 Mar 2024 07:44:06 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:60:14: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+   60 |     suma += *(int)next(L);
+      |              ^
+exercises.c:60:13: error: invalid type argument of unary ‘*’ (have ‘int’)
+   60 |     suma += *(int)next(L);
+      |             ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+eb39ff7
